@@ -1,0 +1,11 @@
+[Unit]
+Description=Regularly send RAM usage metrics via metadata API
+Wants=cloudwatch-agent.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/cloudwatch-agent
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
