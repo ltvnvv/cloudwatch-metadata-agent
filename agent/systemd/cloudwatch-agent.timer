@@ -2,8 +2,8 @@
 Description=Regularly send RAM usage metrics via metadata API
 
 [Timer]
-OnCalendar=*-*-* *:*:0
-AccuracySec=1
+OnUnitActiveSec=1min
+AccuracySec=0.1
 
 [Install]
 WantedBy=timers.target
