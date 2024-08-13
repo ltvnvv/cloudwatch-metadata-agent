@@ -1,9 +1,0 @@
-[Unit]
-Description=Regularly send RAM usage metrics via metadata API
-
-[Timer]
-OnUnitActiveSec=1min
-AccuracySec=0.1
-
-[Install]
-WantedBy=timers.target
