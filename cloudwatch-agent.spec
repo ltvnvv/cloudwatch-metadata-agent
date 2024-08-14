@@ -1,10 +1,10 @@
 Name:      cloudwatch-agent
-Summary:   cloudwatch-ram-metadata-agent
-Version:   1.6.2
-Release:   CROC1%{?dist}
+Summary:   cloudwatch-metadata-agent
+Version:   0.1.0
+Release:   ROCKIT1%{?dist}
 License:   GPLv3
-Vendor:    CROC
-URL:       http://cloud.croc.ru
+Vendor:    ROCKIT
+URL:       http://rockitsoft.ru
 BuildArch: noarch
 Source0:   cloudwatch-agent.tar.gz
 
