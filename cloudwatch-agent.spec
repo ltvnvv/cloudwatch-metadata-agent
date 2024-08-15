@@ -34,15 +34,11 @@ install -m 0644 cloudwatch-agent.timer %{buildroot}%{_unitdir}/cloudwatch-agent.
  
 %post
 systemctl daemon-reload
-systemctl enable cloudwatch-agent.service
-systemctl start cloudwatch-agent.service
 systemctl enable cloudwatch-agent.timer
 systemctl start cloudwatch-agent.timer
- 
+
  
 %preun
-systemctl stop cloudwatch-agent.service
-systemctl disable cloudwatch-agent.service
 systemctl stop cloudwatch-agent.timer
 systemctl disable cloudwatch-agent.timer
  

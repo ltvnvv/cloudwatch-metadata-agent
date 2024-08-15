@@ -7,10 +7,12 @@
 
 RPM-based OS:
 ```sh
-dnf install /path/to/cloudwatch-agent-0.1.0-ROCKIT1.el8.noarch.rpm
+wget https://github.com/C2Devel/cloudwatch-metadata-agent/releases/download/0.1.0/cloudwatch-agent-<version>.rpm
+dnf install ./cloudwatch-agent-<version>.rpm
 ```
 
 DEB-based OS:
 ```sh
-dpkg -i /path/to/deb/cloudwatch-agent-0.1.0-ROCKIT.deb
+wget https://github.com/C2Devel/cloudwatch-metadata-agent/releases/download/0.1.0/cloudwatch-agent-<version>.deb
+dpkg -i ./cloudwatch-agent-<version>.deb
 ```
