@@ -5,7 +5,7 @@
 Name:      %{pkgname}
 Summary:   cloudwatch-metadata-agent
 Version:   0.1.0
-Release:   ROCKIT1%{?dist}
+Release:   ROCKIT1%{?buildid}%{?dist}
 License:   GPLv3
 Vendor:    ROCKIT
 URL:       http://rockitsoft.ru
