@@ -1,5 +1,4 @@
 %global pkgname cloudwatch-agent
-%define version @VERSION@
 %define buildid @BUILDID@
 
 Name:      %{pkgname}
@@ -10,7 +9,7 @@ License:   GPLv3
 Vendor:    ROCKIT
 URL:       http://rockitsoft.ru
 BuildArch: noarch
-Source0:   %{pkgname}-%{?version}.tar.gz
+Source0:   %{pkgname}-%{version}.tar.gz
 
 Requires:  curl
  
@@ -19,7 +18,7 @@ Collects information about RAM load (in percentage) and sends data through the m
  
 
 %prep
-%setup -n %name -q
+%setup -q -n %{pkgname}-%{version}
  
  
 %install
