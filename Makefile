@@ -91,4 +91,4 @@ endif
 
 clean: ## clean build files
 clean: clean-spec
-	@rm -rf build dist srpms rpms $(PROJECT).egg-info $(PROJECT)-*.tar.gz *.egg
+	@rm -rf build dist srpms rpms $(PROJECT)-*.tar.gz
