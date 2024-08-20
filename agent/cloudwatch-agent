@@ -1,0 +1,7 @@
+#!/bin/sh
+
+current_time=$(date +%s.%N)
+current_ram_usage=$(free -b | awk '/Mem/{printf("%.2f"), $3/$2*100}')
+payload="{\"timestamp\": $current_time, \"ram_percent\": $current_ram_usage}"
+
+curl -d "$payload" -H "Content-Type: application/json" http://169.254.169.254/api/cloudwatch/put-ram-metric
