@@ -1,0 +1,9 @@
+Package: cloudwatch-agent
+Description: Collects information about RAM load (in percentage) and sends data through the metadata service. 
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: curl
+Maintainer: ROCKIT
+Website: https://github.com/C2Devel/cloudwatch-metadata-agent.git

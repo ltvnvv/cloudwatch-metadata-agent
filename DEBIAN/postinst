@@ -1,0 +1,7 @@
+#!/bin/sh
+
+chmod +x /usr/sbin/cloudwatch-agent
+# Enable and start the systemd service
+systemctl daemon-reload
+systemctl enable cloudwatch-agent.timer
+systemctl start cloudwatch-agent.timer
